@@ -1,6 +1,10 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 
 const Layout = () => {
+
+  const location = useLocation()
+  const actualURL = location.pathname
+  
   return (
     <div className="md:flex md:min-h-screen">
 
@@ -10,18 +14,18 @@ const Layout = () => {
         </h2> 
 
         <nav className="mt-10">
-          <a 
-            className="text-white text-2xl block mt-2 hover:text-blue-300"
-            href="/customers"
+          <Link 
+            className={`${actualURL === '/customers' ? 'text-blue-300' : 'text-white'} text-2xl block mt-2 hover:text-blue-300`}
+            to="/customers"
           >
             Customers
-          </a>
-          <a 
-            className="text-white text-2xl block mt-2 hover:text-blue-300"
-            href="/customers/new"
+          </Link>
+          <Link 
+            className={`${actualURL === '/customers/new' ? 'text-blue-300' : 'text-white'} text-2xl block mt-2 hover:text-blue-300`}
+            to="/customers/new"
           >
             New Customer
-          </a>
+          </Link>
 
         </nav>
       </div>
