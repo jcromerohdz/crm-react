@@ -4,8 +4,8 @@ import InitSession from './layout/InitSession'
 import Layout from './layout/Layout'
 import Init from './pages/Init'
 import LoginForm from './pages/LoginForm'
-
-
+import NewCustomer from './pages/NewCostumer'
+import EditCustomer from './pages/EditCustomer'
 
 function App() {
 
@@ -15,8 +15,10 @@ function App() {
         <Route path="/" element={<InitSession />}>
           <Route index element={<LoginForm />}/>
         </Route>
-        <Route path="/costumers" element={<Layout />}>
+        <Route path="/customers" element={<Layout />}>
           <Route index element={<Init />}/>
+          <Route path="new" element={<NewCustomer />}/>
+          <Route path="edit/:id" element={<EditCustomer />}/>
 
         </Route>
       </Routes>
