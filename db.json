@@ -1,0 +1,44 @@
+{
+  "customers": [
+    {
+      "name": "Christian",
+      "company": "H20Code",
+      "email": "jcromerohdz@gmail.com",
+      "phone": "664-2547534",
+      "notes": "This is awesome",
+      "id": 1
+    },
+    {
+      "name": "Jose Romero",
+      "company": "RomeroStudio",
+      "email": "chrisR@gmail.com",
+      "phone": "664-2121211",
+      "notes": "Hello",
+      "id": 2
+    },
+    {
+      "name": "Jose Romero 2",
+      "company": "RomeroStudio 2",
+      "email": "chrisR2@gmail.com",
+      "phone": "664-2121211",
+      "notes": "Hello",
+      "id": 3
+    },
+    {
+      "name": "Ruben",
+      "company": "RubenStudio",
+      "email": "ruben@gmail.com",
+      "phone": "664-2121212",
+      "notes": "Project manager",
+      "id": 4
+    },
+    {
+      "name": "Paulina",
+      "company": "Paulina Pasteles",
+      "email": "paulina@pasteles.com",
+      "phone": "664-6453423",
+      "notes": "",
+      "id": 5
+    }
+  ]
+}
