@@ -1,10 +1,15 @@
-import React from 'react';
+import FormCustomer from "../components/FormCustomer";
 
 const NewCustomer = () => {
   return (
-    <div>
-      <h1>New Costumer</h1>
-    </div>
+    <>
+      <h1 className="font-medium text-4xl text-slate-500">New Costumer</h1>
+      <p className='mt-3'>Filled up the following fields to create a new customer</p>
+
+
+      <FormCustomer />
+      
+    </>
   ) 
 };
 
