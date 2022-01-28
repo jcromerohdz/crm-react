@@ -23,6 +23,28 @@ const Init = () => {
 
   }, [])
 
+  const handleDelete = async id => {
+    console.log('Deleting....', id)
+    const remove = confirm("Are you sure you want to delete this customer?")
+    console.log(remove)
+
+    if(remove){
+      try {
+        const url = `http://localhost:4000/customers/${id}`
+        const response = await fetch(url, {
+          method: 'DELETE'
+        })
+
+        await response.json()
+        const arrayCustomers = customers.filter( customer => customer.id !== id)
+        setCustomers(arrayCustomers)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    
+  }
+
   return (
     <>
       <h1 className="font-medium text-4xl text-slate-500">Customers</h1>
@@ -46,6 +68,7 @@ const Init = () => {
             <Customer 
               key={customer.id}
               customer={customer}
+              handleDelete={handleDelete}
             />
 
           ))}
