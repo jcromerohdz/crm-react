@@ -1,11 +1,11 @@
 {
   "customers": [
     {
-      "name": "Christian",
+      "name": "Jose Hernandez",
       "company": "H20Code",
       "email": "jcromerohdz@gmail.com",
       "phone": "664-2547534",
-      "notes": "This is awesome",
+      "notes": "This is awesome - Edited",
       "id": 1
     },
     {
@@ -39,6 +39,14 @@
       "phone": "664-6453423",
       "notes": "",
       "id": 5
+    },
+    {
+      "name": "Oscar Fuentes R",
+      "company": "Plomero",
+      "email": "oscar@correo.com",
+      "phone": "664-6453221",
+      "notes": "Haciendo Pruebas",
+      "id": 6
     }
   ]
 }
